@@ -797,7 +797,7 @@ func TestTemplates(t *testing.T) {
 	}
 }
 
-// ExectureTestTemplate builds a TemplateResource based on the toml and tmpl files described
+// ExecuteTestTemplate: builds a TemplateResource based on the toml and tmpl files described
 // in the templateTest, writes a config file, and compares the result against the expectation
 // in the templateTest.
 func ExecuteTestTemplate(tt templateTest, t *testing.T) {

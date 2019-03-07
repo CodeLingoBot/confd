@@ -24,7 +24,7 @@ type Watch struct {
 	rwl sync.RWMutex
 }
 
-// Wait until revision is greater than lastRevision
+// WaitNext: Wait until revision is greater than lastRevision
 func (w *Watch) WaitNext(ctx context.Context, lastRevision int64, notify chan<-int64) {
 	for {
 		w.rwl.RLock()

@@ -12,7 +12,7 @@ type ConsulClient struct {
 	client *api.KV
 }
 
-// NewConsulClient returns a new client to Consul for the given address
+// New: New returns a new client to Consul for the given address
 func New(nodes []string, scheme, cert, key, caCert string, basicAuth bool, username string, password string) (*ConsulClient, error) {
 	conf := api.DefaultConfig()
 
